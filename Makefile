@@ -15,7 +15,8 @@ clean:
 
 install:
 	sudo apt-get install scratchbox2 qemu gstreamer0.10-ffmpeg gstreamer0.10-plugins-bad
-	sb2-init -c qemu-arm armv7 /usr/local/codesourcery/arm-2009q3/bin/arm-none-linux-gnueabi-gcc
+	#sb2-init -c qemu-arm armv7 /usr/local/codesourcery/arm-2009q3/bin/arm-none-linux-gnueabi-gcc
+	sb2-init -c qemu-arm armv7 /usr/bin/arm-linux-gnueabi-gcc
 
 drone:
 	./ardrone2.py installvision
