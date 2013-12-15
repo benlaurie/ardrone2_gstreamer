@@ -1,0 +1,1 @@
+ gst-launch-0.10 -vvv udpsrc port=5000 caps="application/x-rtp" ! rtpmp4vdepay ! ffdec_mpeg4 ! xvimagesink

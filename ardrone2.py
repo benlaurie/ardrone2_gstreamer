@@ -85,6 +85,7 @@ def ardrone2_reboot():
 def ardrone2_install_vision():
   print 'Uploading GST'
   ftp.storbinary("STOR arm_light.tgz",file("bin/arm_light.tgz","rb"))
+  ftp.storbinary("STOR start-video", file("send-video", "rb"))
   print execute_command("cd /data/video && tar -xzf arm_light.tgz")
   print execute_command("rm -rf /data/video/arm_light.tgz")
   print 'Now Starting Vision'
